@@ -20,211 +20,292 @@
 </head>
 
 <body>
-    <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="/assets 4/CM.svg" alt="">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Projects</a>
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Contact</a>
-                </li>
-                <li class="nav__link click">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "><i class="fas fa-circle-half-stroke"></i></a>
-                </li>
-            </ul>
-        </nav>
-
-        <header class="header">
-            <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title blue">I'm Cameron</h1>
-                <p class="header__para">
-                    I'm a <b class="blue">Frontend Software Engineer</b> with a strong passion building web applications with memorable user experiences.
-                    <br>
-                    Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
-                </p>
-                <div class="social__list">
-                    <a href="https://www.linkedin.com/in/cameron-moses/" class="social__link click" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/CJMoses1318" class="social__link click" target="_blank">
-                        <i class="fa-brands fa-github-alt"></i>
-                    </a>
-                    <a href="/Resume_CamMoses.pdf" class="social__link click" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <button class="mail__btn click" onclick="toggleModal()">
-            <i class="fas fa-envelope"></i>
-        </button>
-        <a href="#projects" class="scroll">
-            <div class="scroll__icon click"></div>
-        </a>
-        <div class="modal">
-            <div class="modal__half modal__about">
-                <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
-                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
-                <p class="modal__para">
-                    I'm a <b class="blue">Frontend Software Engineer</b> who loves building websites with memorable <b class="blue">user experiences.</b>
-                    <br>
-                     I currently work on extremely <b class="blue">difficult engineering problems</b> and learn from a team consisting of the most <b class="blue">talented</b> and <b class="blue">experienced</b> sotware engineers every day.
-                </p>
-                <div class="modal__languages">
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="">
-                        <span class="language__name">HTML</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/16020/16020753.png" alt="">
-                        <span class="language__name">CSS</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="">
-                        <span class="language__name">JavaScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="">
-                        <span class="language__name">React</span>
-                    </figure>
-                </div>
-            </div>
-            <div class="modal__half modal__contact">
-                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-                <h3 class="modal__title modal__title--contact">
-                    Let's have a chat!
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets 4/CM.svg" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1>
+        <h1 class="title blue">I'm Cameron.</h1>
+        <p class="header__para">
+          I'm a <b class="blue">Frontend Software Engineer</b> with a strong passion for building web applications
+          with memorable user experiences.
+          <br>
+          Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/cameron-moses/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/CJMoses1318" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./Resume_CamMoses.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+        <p class="modal__para">
+          I'm a 21 year-old Australian <b class="blue">frontend software engineer</b> with experience developing
+          websites for top-tech companies like <b class="blue">Google</b> and <b class="blue">Canva</b>.
+          <br>
+          I currently solve extremely difficult engineering
+          problems every day with <b class="blue">React</b>, <b class="blue">TypeScript</b> and <b
+            class="blue">MobX</b>
+          in Canva's Video team.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="">
+            <span class="language__name">React</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+    <img src="./assets 4/semi circle.svg" class="shape shape--0">
+    <img src="./assets 4/circle.svg" class="shape shape--1">
+    <img src="./assets 4/squiggly.svg" class="shape shape--2">
+    <img src="./assets 4/circle.svg" class="shape shape--3">
+    <img src="./assets 4/triangle.svg" class="shape shape--4">
+    <img src="./assets 4/circle.svg" class="shape shape--5">
+    <img src="./assets 4/squiggly.svg" class="shape shape--6">
+    <img src="./assets 4/circle.svg" class="shape shape--7">
+    <img src="./assets 4/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="blue">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets 4/google mockup.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Google In-Store
                 </h3>
-                <h4 class="modal__sub-title modal__sub-title--contact">
-                    I'm currently open to new opportunities.
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, Vue, Vuex
                 </h4>
-                <form  id="contact__form" onsubmit="contact(event)">
-                    <div class="form__item">
-                        <label class="form__item--label" >Name</label>
-                        <input class="input" name="user_name" type="text"></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Email</label>
-                        <input class="input" name="user_email" type="email"></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text"></textarea>
-                    </div>
-                    <button id="contact__submit" class="form__submit">
-                        Send it my way!
-                    </button>
-                </form>
-                <div class="modal__overlay modal__overlay--loading">
-                    <i class="fas fa-spinner"></i>
+                <p class="project__description--para">
+                  Google In-Store is a platform allowing Google retail employees to report any issues with their
+                  store products. Once an issue is reported, it is posted to an API which populates a separate
+                  platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
+                  the sole
+                  front-end developer of this application.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://googleinstore.com.au/" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
                 </div>
-                <div class="modal__overlay modal__overlay--success">
-                    Thanks for the message! Looking forward to speaking with you soon.
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets 4/Frontend Simplified.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Frontend Simplified
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS, JavaScript, Vue, Vuex, Nuxt, Firebase
+                </h4>
+                <p class="project__description--para">
+                  Frontend Simplified is a side project built to not only teach people how to code, but teach them how
+                  to get job ready in the quickest way possible. Users of this platform can join my 2,300+ member
+                  community
+                  including engineers from Google, Canva, Atlassian, Apple, Microsoft and Salesforce.
+                  The entire platform and courses was built by myself
+                  and I'm
+                  planning to
+                  release the MVP in the next few weeks.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets 4/Eportfolio YT.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  E-Portfolio YouTube Tutorial
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Html, CSS
+                </h4>
+                <p class="project__description--para">
+                  E-Portfolio built to help my social media followers learn basic CSS properties, layout and best
+                  practises -
+                  along with including tips along the way to help them land their first job.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://www.youtube.com/watch?v=C8BlRjB3vYI" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://github.com/davidbr4gg/davidbr4gg.github.io" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://davidbr4gg.github.io/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
                 </div>
+              </div>
             </div>
-        </div>   
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    Here are some of my <span class="blue">projects</span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="/assets 4/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, React
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro at, velit vel totam rem harum dicta animi maxime nisi consequuntur possimus incidunt facere veritatis similique in optio magni nesciunt.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fa-brands fa-github-alt"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
+            <img src="./assets 4/CM.svg" class="footer__logo--img" alt="">
+          </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/CJMoses1318" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/cameron-moses/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Contact
+          </a>
+          <a href="./Resume_CamMoses.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row footer__row">
-
-            </div>
-            <figure>
-                <img class="footer__logo--img" src="./assets 4/CM.svg" alt="">
-            </figure>
-            <div class="footer__social--list">
-                <a href="" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                Github
-            </a>
-                <a href="" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                linkedin
-            </a>
-                <a href="" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                Contact
-            </a>
-                <a href="" class="
-                footer__social--link
-                link__hover-effect
-                link__hover-effect--white
-                ">
-                Resume
-            </a>
-            </div>
-            <div class="footer__copyright">Made by Cameron Moses</div>
-        </div>
-    </footer>
+        <div class="footer__copyright">Copyright &copy; 2025 Cameron Moses</div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
